@@ -6,6 +6,8 @@ https://raw.githubusercontent.com/lianlianyi/repo/master/repository/
 # maven-repo
 My personal maven repository.
 
+clean deploy -DaltDeploymentRepository=internal.repo::default::file:D:\git\repo -Drelease=true
+
 ## Usage
 pom.xml:
 ```xml
