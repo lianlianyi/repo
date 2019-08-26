@@ -14,7 +14,7 @@ pom.xml:
     <repositories>
         <repository>
             <id>hengyunabc-maven-repo</id>
-            <url>https://raw.githubusercontent.com/lianlianyi/repo/master/repository/</url>
+            <url>https://raw.githubusercontent.com/lianlianyi/repo/master/</url>
         </repository>
     </repositories>
 ```

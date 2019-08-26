@@ -65,6 +65,13 @@
 					</execution>
 				</executions>
 			</plugin>
+			
+    	<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<altDeploymentRepository>internal.repo::default::file://${repo}</altDeploymentRepository>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>

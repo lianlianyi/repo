@@ -59,6 +59,14 @@
 					<classifier>exec</classifier>
 				</configuration>
 			</plugin>
+			
+    	<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<altDeploymentRepository>internal.repo::default::file://${repo}</altDeploymentRepository>
+				</configuration>
+			</plugin>
+    	
 			<!-- 跳过单元测试 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
