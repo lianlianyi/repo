@@ -16,6 +16,7 @@
 		<jodd.version>5.0.8</jodd.version>
 		<hutool.version>[4.1.12,)</hutool.version>
 		<xxl.conf.version>1.6.1</xxl.conf.version>
+		<aliyun.sms.version>1.2.0</aliyun.sms.version>
 		<repo>D:\git\repo</repo>
 	</properties>
 
@@ -65,8 +66,13 @@
 		<!-- 阿里云短信 https://gitee.com/cn-src/aliyun-sms -->
 		<dependency>
 			<groupId>cn.javaer.aliyun</groupId>
+			<artifactId>aliyun-sms</artifactId>
+			<version>${aliyun.sms.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.javaer.aliyun</groupId>
 			<artifactId>aliyun-spring-boot-starter-sms</artifactId>
-			<version>1.2.0</version>
+			<version>${aliyun.sms.version}</version>
 		</dependency>
 
 		<!-- redis -->
