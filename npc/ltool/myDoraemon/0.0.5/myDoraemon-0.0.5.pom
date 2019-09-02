@@ -40,7 +40,7 @@
 		
 		<dependency>
 			<groupId>cc.star</groupId>
-			<artifactId>starlight-core</artifactId>
+			<artifactId>starlight-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
