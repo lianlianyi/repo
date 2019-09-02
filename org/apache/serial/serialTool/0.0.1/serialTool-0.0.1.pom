@@ -2,10 +2,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>npc.ltool</groupId>
-	<artifactId>myDoraemon</artifactId>
-	<version>0.0.5</version>
-
+	<groupId>org.apache.serial</groupId>
+	<artifactId>serialTool</artifactId>
+	<version>0.0.1</version>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -37,7 +37,7 @@
 			<artifactId>JustAuth</artifactId>
 			<version>1.10.1</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>cc.star</groupId>
 			<artifactId>starlight-common</artifactId>
@@ -155,55 +155,14 @@
 					<altDeploymentRepository>internal.repo::default::file://${repo}</altDeploymentRepository>
 				</configuration>
 			</plugin>
-
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-source-plugin</artifactId> 
-				<configuration> <attach>false</attach>true </configuration> <executions> 
-				<execution> <phase>compile</phase>需要install才执行 <id>attach-sources</id> <goals> 
-				<goal>jar</goal> </goals> </execution> </executions> </plugin> -->
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-javadoc-plugin</artifactId> 
-				<executions> <execution> <id>attach-javadocs</id> <goals> <goal>jar</goal> 
-				</goals> </execution> </executions> </plugin> -->
-
-
-			<!-- <plugin>
-				<groupId>com.github.wvengen</groupId>
-				<artifactId>proguard-maven-plugin</artifactId>
-				<version>2.1.1</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>proguard</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<attach>true</attach>
-					<attachArtifactClassifier>dram</attachArtifactClassifier>
-					attach 的作用是在 install 与 deploy 时将生成的 pg 文件也安装与部署
-					<options> 详细配置方式参考 ProGuard 官方文档
-						<option>-dontobfuscate</option>
-						<option>-ignorewarnings</option> 忽略所有告警
-						<option>-dontshrink</option>   不做 shrink
-						<option>-dontoptimize</option> 不做 optimize
-						<option>-dontskipnonpubliclibraryclasses</option>
-						<option>-dontskipnonpubliclibraryclassmembers</option>
-					</options>
-					<outjar>${project.build.finalName}-pg</outjar>
-					<libs>
-						<lib>${java.home}/lib/rt.jar</lib>
-					</libs>
-
-				</configuration>
-			</plugin> -->
 		</plugins>
 	</build>
-	
+
 	<repositories>
 		<repository>
-            <id>aliyun-repo</id>
-            <url>https://maven.aliyun.com/repository/public</url>
-        </repository>
+			<id>aliyun-repo</id>
+			<url>https://maven.aliyun.com/repository/public</url>
+		</repository>
 	</repositories>
 
 	<distributionManagement>
@@ -216,6 +175,4 @@
 			<url>https://repo.rdc.aliyun.com/repository/30779-snapshot-OGxjcA/</url>
 		</snapshotRepository>
 	</distributionManagement>
-
-
 </project>
